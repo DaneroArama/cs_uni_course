@@ -21,16 +21,8 @@ html, body {
 }
 
 .loader {
-  position: fixed; /* Ensure it covers the entire screen */
-  top: 0;
-  left: 0;
   width: 100vw; /* Full width */
   height: 100vh; /* Full height */
-  background: rgba(255, 255, 255, 0.9); /* Light background (optional) */
-  display: flex; /* Center content inside */
-  align-items: center;
-  justify-content: center;
-  z-index: 9999; /* Keep it on top of everything else */
   transition: opacity 1s ease, visibility 1s ease;
 }
 
@@ -44,10 +36,11 @@ html, body {
   position: absolute;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vh;
   height: 100vh; /* Make sure the container takes the full viewport height */
   background-color: #000000;
   overflow: hidden;
+  z-index: 9999; /* Keep it on top of everything else */
 }
 
 #container netflixintro {
