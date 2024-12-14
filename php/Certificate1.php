@@ -4,7 +4,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['user'])) {
     // If not logged in, redirect to login page
-    header('Location: /cs_uni_course/html/Login&Register.html');
+    header('Location: /html/Login&Register.html');
     exit();
 }
 
@@ -35,7 +35,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
-    <link rel="stylesheet" href="../css/Certificate1.css">
+    <link rel="stylesheet" href="/css/Certificate1.css">
 </head>
 
 <body>
@@ -46,12 +46,12 @@ $conn->close();
 
 <header>
     <div class="inner">
-        <div class="logo"><img src="../jpg/CS_Uni_Course.jpg" alt="Logo"></div>
+        <div class="logo"><img src="/jpg/CS_Uni_Course.jpg" alt="Logo"></div>
         <div class="burger"></div>
         <nav>
             <a href="Landing_Page.php">Home</a>
-            <a href="../html/Courses.html">Courses</a>
-            <a href="../html/About_Us.html">About Us</a>
+            <a href="/html/Courses.html">Courses</a>
+            <a href="/html/About_Us.html">About Us</a>
             <a href="Dashboard.php" class="active" >Welcome, <?php echo htmlspecialchars($username); ?>!</a>
             <img  src="<?php echo htmlspecialchars($profile_picture); ?>" alt="Profile Picture" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
         </nav>
@@ -62,7 +62,7 @@ $conn->close();
 <div class="certificate-wrapper">
     <div id="certificate" class="certificate-container">
         <div class="logo1">
-            <img src="../jpg/CS_Uni_Course.jpg" alt="">
+            <img src="/jpg/CS_Uni_Course.jpg" alt="">
         </div>
         <div class="certificate-header bold h1">Certificate of Appreciation</div>
         <div class="certificate-subheader bold cursive h1">This Certificate is Presented to</div>
@@ -92,7 +92,7 @@ $conn->close();
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="../js/Certificate.js"></script>
+<script src="/js/Certificate.js"></script>
 
 </body>
 </html>

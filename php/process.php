@@ -31,10 +31,10 @@ if (isset($_POST['login'])) {
     $user = authenticate_user($email, $password);
     if ($user) {
         $_SESSION['user'] = $user['name'];
-        header("Location: /cs_uni_course/php/Landing_Page.php");
+        header("Location: /php/Landing_Page.php");
     } else {
         $_SESSION['error'] = "Invalid email or password.";
-        header("Location: /cs_uni_course/html/404.html");
+        header("Location: /html/404.html");
     }
 } elseif (isset($_POST['register'])) {
     $name = $_POST['name'];
@@ -44,10 +44,10 @@ if (isset($_POST['login'])) {
 
     if (register_user($name, $phone, $email, $password)) {
         $_SESSION['user'] = $name;
-        header("Location: /cs_uni_course/php/Landing_Page.php");
+        header("Location: /php/Landing_Page.php");
     } else {
         $_SESSION['error'] = "Registration failed. Please try again.";
-        header("Location: /cs_uni_course/html/404.html");
+        header("Location: /html/404.html");
     }
 }
 ?>

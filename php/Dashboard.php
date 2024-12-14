@@ -7,7 +7,6 @@ if (!isset($_SESSION['user'])) {
     die("You are not logged in. Please log in to access this page.");
 }
 
-// Retrieve the username from the session
 $username = $_SESSION['user'];
 
 // Fetch the user ID based on the username
@@ -98,7 +97,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>User Dashboard</title>
-    <link rel="stylesheet" href="../css/Dashboard.css">
+    <link rel="stylesheet" href="/css/Dashboard.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
@@ -110,12 +109,12 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <header>
     <div class="inner">
-        <div class="logo"><img src="../jpg/CS_Uni_Course.jpg" alt="Logo"></div>
+        <div class="logo"><img src="/jpg/CS_Uni_Course.jpg" alt="Logo"></div>
         <div class="burger"></div>
         <nav>
             <a href="Landing_Page.php">Home</a>
-            <a href="../html/Courses.html">Courses</a>
-            <a href="../html/About_Us.html">About Us</a>
+            <a href="/html/Courses.html">Courses</a>
+            <a href="/html/About_Us.html">About Us</a>
             <a class="active" href="Dashboard.php">Welcome, <?php echo htmlspecialchars($username); ?>!</a>
             <img src="<?php echo htmlspecialchars($user['profile_picture']); ?>" alt="Profile Picture" width="100" style="width: 40px; height: 40px; border-radius: 50%; vertical-align: middle;">
         </nav>

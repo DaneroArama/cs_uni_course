@@ -4,7 +4,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['user'])) {
     // If not logged in, redirect to login page
-    header('Location: /cs_uni_course/html/Login&Register.html');
+    header('Location: /html/Login&Register.html');
     exit();
 }
 
@@ -35,7 +35,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSUniCourses</title>
-    <link rel="stylesheet" href="../css/Landing_Page.css">
+    <link rel="stylesheet" href="/css/Landing_Page.css">
 </head>
 <body>
 
@@ -59,8 +59,8 @@ $conn->close();
         <div class="burger"></div>
         <nav>
             <a class="active" href="Landing_Page.php">Home</a>
-            <a href="../html/Courses.html">Courses</a>
-            <a href="../html/About_Us.html">About Us</a>
+            <a href="/html/Courses.html">Courses</a>
+            <a href="/html/About_Us.html">About Us</a>
             <a href="Dashboard.php">Welcome, <?php echo htmlspecialchars($username); ?>!</a>
             <img class="profile_picture" src="<?php echo htmlspecialchars($profile_picture); ?>" alt="Profile Picture" style="width: 45px; height: 45px; border-radius: 50%; vertical-align: middle;transition: transform 0.3s, box-shadow 0.3s;">
         </nav>
@@ -84,7 +84,7 @@ $conn->close();
                 <span class="bullet-point">Career Opportunities: Our graduates are in high demand, with top companies seeking their expertise.</span>
                 </p>
                 <div class="cta">
-                    <a href=../html/Courses.html class="btn">Get Started Now</a>
+                    <a href=/html/Courses.html class="btn">Get Started Now</a>
                     <p>Call us (959)795-905-432<br>For any question or concern</p>
                 </div>
             </div>
@@ -95,17 +95,17 @@ $conn->close();
         <div class="container">
             <div class="feature-below">
                 <div class="feature">
-                    <img src=../jpg/icon-01.svg>
+                    <img src=/jpg/icon-01.svg>
                     <h3>24/7 Support</h3>
                     <p>Can discuss with the teachers anytime</p>
                 </div>
                 <div class="feature">
-                    <img src=../jpg/icon-02.svg>
+                    <img src=/jpg/icon-02.svg>
                     <h3>Learn from Anywhere</h3>
                     <p>Our courses are recorded,so you can learn anytime, anywhere</p>
                 </div>
                 <div class="feature">
-                    <img src=../jpg/icon-03.svg>
+                    <img src=/jpg/icon-03.svg>
                     <h3>Team Work</h3>
                     <p>We cooperate the students' teamwork through the projects</p>
                 </div>
@@ -120,7 +120,7 @@ $conn->close();
     <div class="container-pic">
         <div class="box">
             <div class="imgBx">
-                <img src=../jpg/pic1.png>
+                <img src=/jpg/pic1.png>
             </div>
             <div class="content">
                 <div>
@@ -132,7 +132,7 @@ $conn->close();
 
         <div class="box">
             <div class="imgBx">
-                <img src=../jpg/pic2.png>
+                <img src=/jpg/pic2.png>
             </div>
             <div class="content">
                 <div>
@@ -144,7 +144,7 @@ $conn->close();
 
         <div class="box">
             <div class="imgBx">
-                <img src=../jpg/pic3.png>
+                <img src=/jpg/pic3.png>
             </div>
             <div class="content">
                 <div>
@@ -157,7 +157,7 @@ $conn->close();
 
         <div class="box">
             <div class="imgBx">
-                <img src=../jpg/pic4.png>
+                <img src=/jpg/pic4.png>
             </div>
             <div class="content">
                 <div>
@@ -169,7 +169,7 @@ $conn->close();
 
         <div class="box">
             <div class="imgBx">
-                <img src=../jpg/pic5.png>
+                <img src=/jpg/pic5.png>
             </div>
             <div class="content">
                 <div>
@@ -202,7 +202,7 @@ $conn->close();
         </div>
     </section>
 
-    <script src=../js/Landing_page.js></script>
+    <script src=/js/Landing_page.js></script>
 
 </body>
 </html>
