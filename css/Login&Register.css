@@ -10,6 +10,16 @@ body{
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-size: 16px; /* Adjust this if you want smaller text */
+  zoom: 0.9; /* Ensure there's no zoom applied */
+}
+
 .loader {
   transition: opacity 1s ease, visibility 1s ease;
 }

@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 16px; /* Adjust this if you want smaller text */
+    zoom: 0.9; /* Ensure there's no zoom applied */
+}
+
 .button {
     margin: 0;
     height: auto;
