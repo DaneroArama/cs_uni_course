@@ -1,6 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
-    font-size: 16px; /* Avoid excessively large values */
-    zoom: 1;         /* Ensure no zoom is applied */
+    font-size: 16px; /* Adjust this if you want smaller text */
+    zoom: 1; /* Ensure there's no zoom applied */
 }
 
 body {
