@@ -21,6 +21,8 @@ html, body {
 }
 
 .loader {
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
   transition: opacity 1s ease, visibility 1s ease;
 }
 
