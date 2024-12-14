@@ -6,6 +6,7 @@
 html, body {
     font-size: 16px; /* Adjust this if you want smaller text */
     zoom: 1; /* Ensure there's no zoom applied */
+    transform: scale(0.9)
 }
 
 body {
