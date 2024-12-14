@@ -40,7 +40,6 @@ html, body {
   height: 100vh; /* Make sure the container takes the full viewport height */
   background-color: #000000;
   overflow: hidden;
-  z-index: 9999; /* Keep it on top of everything else */
 }
 
 #container netflixintro {
