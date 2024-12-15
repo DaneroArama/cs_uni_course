@@ -4,38 +4,24 @@ include 'db.php'; // Include your database connection
 
 function authenticate_user($email, $password) {
     global $conn;
-
     $email = $conn->real_escape_string($email);
+    $password = $conn->real_escape_string($password);
 
-    $sql = "SELECT * FROM users WHERE email='$email'";
+    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-
-        // Verify the entered password against the hashed password
-        if (password_verify($password, $user['password'])) {
-            return $user; // Password matches
-        }
-    }
-
-    return false; // No match
+    return $result->fetch_assoc();
 }
 
 function register_user($name, $phone, $email, $password) {
     global $conn;
-
     $name = $conn->real_escape_string($name);
     $phone = $conn->real_escape_string($phone);
     $email = $conn->real_escape_string($email);
+    $password = $conn->real_escape_string($password);
 
-    // Hash the password securely
-    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
-
-    $sql = "INSERT INTO users (name, phone, email, password) VALUES ('$name', '$phone', '$email', '$hashed_password')";
+    $sql = "INSERT INTO users (name, phone, email, password) VALUES ('$name', '$phone', '$email', '$password')";
     return $conn->query($sql);
 }
-
 
 if (isset($_POST['login'])) {
     $email = $_POST['login_email'];
