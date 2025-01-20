@@ -1,6 +1,6 @@
 <?php
 $servername = "mysql-daneroarama.alwaysdata.net"; // Alwaysdata server
-$username = "your_username"; // Replace with your Alwaysdata username
+$username = "391055"; // Replace with your Alwaysdata username
 $password = "ABC!@#$%^DEF"; // Your Alwaysdata password
 $dbname = "daneroarama_users"; // Your Alwaysdata database name
 
