@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="PS-242.20224.427">
+  <component name="dataSourceStorageLocal" created-in="WS-243.23654.120">
     <data-source name="user_database@localhost" uuid="1e895064-0b2a-4f11-ac48-a17bc4a53b50">
       <database-info product="MySQL" version="5.5.5-10.4.32-MariaDB" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MARIADB" exact-version="10.4.32" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
@@ -14,6 +14,12 @@
           <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="MySQL" uuid="96ad102c-de1d-4d14-bf4c-55a866792f31">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>391055</user-name>
+      <schema-mapping />
     </data-source>
   </component>
 </project>
