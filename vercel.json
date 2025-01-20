@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.js": {
+    "api/process.js": {
       "runtime": "nodejs14.x"
     }
   },
